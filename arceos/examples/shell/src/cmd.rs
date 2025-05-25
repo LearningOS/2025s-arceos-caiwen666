@@ -27,6 +27,7 @@ const CMD_TABLE: &[(&str, CmdHandler)] = &[
     ("pwd", do_pwd),
     ("rm", do_rm),
     ("uname", do_uname),
+    ("rename", do_rename)
 ];
 
 fn file_type_to_char(ty: FileType) -> char {
@@ -64,6 +65,36 @@ const fn file_perm_to_rwx(mode: u32) -> [u8; 9] {
     set!(5, b'r'); set!(4, b'w'); set!(3, b'x');
     set!(8, b'r'); set!(7, b'w'); set!(6, b'x');
     perm
+}
+
+fn do_rename(args: &str) {
+    if args.is_empty() {
+        print_err!("rename", "missing operand");
+        return;
+    }
+    let args = args.trim().split_whitespace();
+    let mut old_name = None;
+    let mut new_name = None;
+    for arg in args {
+        if old_name.is_none() {
+            old_name = Some(arg);
+        } else if new_name.is_none() {
+            new_name = Some(arg);
+        } else {
+            print_err!("rename", "too many arguments");
+            return;
+        }
+    }
+    fn rename_one(old_name: &str, new_name: &str) -> io::Result<()> {
+        fs::rename(old_name, new_name)
+    }
+    if let (Some(old), Some(new)) = (old_name, new_name) {
+        if let Err(e) = rename_one(old, new) {
+            print_err!("rename", format_args!("cannot rename '{old}' to '{new}'"), e);
+        }
+    } else {
+        print_err!("rename", "missing operand");
+    }
 }
 
 fn do_ls(args: &str) {
