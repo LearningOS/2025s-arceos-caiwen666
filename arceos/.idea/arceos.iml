@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="EMPTY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/api/arceos_api/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/api/arceos_posix_api/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/api/axfeat/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/alt_alloc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/print_with_color/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/ramfs_rename/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/simple_hv/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/support_hashmap/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exercises/sys_map/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/alt_axalloc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axalloc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axconfig/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axdisplay/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axdma/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axdriver/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axfs/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axfs/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axhal/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axlog/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axmm/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axnet/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axruntime/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axsync/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/axtask/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/bump_allocator/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/elf/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/riscv_vcpu/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/payload/origin/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/payload/skernel/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/payload/skernel2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/h_1_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/h_2_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/h_3_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/h_4_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/m_1_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/m_1_1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/m_2_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/m_3_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/m_3_1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/u_1_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/u_2_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/u_3_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/u_4_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/u_5_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/u_6_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/u_6_1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/u_7_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tour/u_8_0/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ulib/axlibc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ulib/axstd/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

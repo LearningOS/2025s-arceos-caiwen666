@@ -27,8 +27,9 @@ unsafe fn init_mmu() {
 #[link_section = ".text.boot"]
 unsafe extern "C" fn _start() -> ! {
     // PC = 0x8020_0000
-    // a0 = hartid
-    // a1 = dtb
+    // 下面是来自 opensbi 的参数
+    // a0 = hartid 用来识别 cpu
+    // a1 = dtb 设备树指针
     core::arch::asm!("
         mv      s0, a0                  // save hartid
         mv      s1, a1                  // save DTB pointer

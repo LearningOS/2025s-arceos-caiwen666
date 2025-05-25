@@ -49,13 +49,16 @@
 #![cfg_attr(all(not(test), not(doc)), no_std)]
 #![feature(doc_cfg)]
 #![feature(doc_auto_cfg)]
+#![feature(hasher_prefixfree_extras)]
 
 #[cfg(feature = "alloc")]
 extern crate alloc;
+#[cfg(feature = "alloc")]
+pub mod collections;
 
 #[cfg(feature = "alloc")]
 #[doc(no_inline)]
-pub use alloc::{boxed, collections, format, string, vec};
+pub use alloc::{boxed, format, string, vec};
 
 #[doc(no_inline)]
 pub use core::{arch, cell, cmp, hint, marker, mem, ops, ptr, slice, str};
@@ -64,9 +67,11 @@ pub use core::{arch, cell, cmp, hint, marker, mem, ops, ptr, slice, str};
 mod macros;
 
 pub mod env;
+pub mod hash;
 pub mod io;
 pub mod os;
 pub mod process;
+pub mod random;
 pub mod sync;
 pub mod thread;
 pub mod time;
